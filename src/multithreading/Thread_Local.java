@@ -6,6 +6,7 @@ public class Thread_Local {
 
     public static void main(String[] args) {
 
+
         Thread t1 = new Thread(() -> {
             threadLocal.set(1);
             final Integer i = threadLocal.get();

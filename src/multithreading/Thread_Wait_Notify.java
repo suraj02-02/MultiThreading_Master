@@ -11,6 +11,8 @@ package multithreading;
  *  Analyses :  Although the two threads are synchronised with a shared lock resource ,there can be scenario where
  *  The counter value can go beyond 1 or 0 and we cannot control it since we don't have thread execution control.
  *
+ *  In such scenarios it is better to use a synchronised blocks , AtomicIntegers which handles such multi-threaded
+ *  concurrent situations very well.
  */
 
 public class Thread_Wait_Notify {
